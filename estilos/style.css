@@ -1,0 +1,13 @@
+@import "UTF-8";
+
+:root{
+    /*Paleta de cores do site*/
+    --cor1: #1A0D03;
+    --cor2: #663000;
+    --cor3: #051A06;
+    --cor4: #06001A;
+    --cor5: #1C0566;
+}
+main{
+    text-align: center;
+}
