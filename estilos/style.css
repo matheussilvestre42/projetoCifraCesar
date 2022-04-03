@@ -1,11 +1,93 @@
 @import "UTF-8";
+@font-face {
+    font-family: 'matrix';
+    src: url(../fonte/matrix.ttf);
+}
 
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--normal);
+}
 :root{
     /*Paleta de cores do site*/
-    --cor1: #1A0D03;
-    --cor2: #663000;
-    --cor3: #051A06;
-    --cor4: #06001A;
-    --cor5: #1C0566;
+    --cor1: #020202;
+    --cor2: #140B06;
+    --cor3: #130502;
+    --cor4: #080403;
+
+    /*Fontes do site*/
+    --normal: Arial, Helvetica, sans-serif;
+    --matrix: 'matrix', cursive;
+}
+header{
+    background-image: linear-gradient(to right, #020202, #140B06, #130502, #080403);
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding: 10px;
+    font-family:var(--matrix);
+}
+section.image{
+    background-image: url('../imagem/pexels-cottonbro-7319070.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    width: 98.7vw;
+    height: 87vh;
+    box-shadow: inset 0px 10px 18px 15px black;
+}
+.explanText > h1{
+    text-align: center;
+    padding-top: 50px;
+}
+.text {
+    display: flex;
+}
+.colums{
+    width: 500px;
+    text-align: justify;
+    padding: 30px;
+    margin: auto;
+}
+.attencion{
+    background-color: rgb(255, 255, 71);
+    width: 700px;
+    margin: auto;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.562);
+}
+.attencion > strong{
+    color: rgb(248, 46, 46);
+    padding: 5px;
+}
+.attencion > p{
+    text-align: justify;
+    padding: 10px;
+}
+.crypto{
+    padding: 20px;
+    margin-left: 10%;
+}
+.textCrypto, .textDecrypto{
+    font-size: 17px;
+}
+.buttons{
+    display: flex;
+    padding: 5px;
+}
+.cryptButton{
+    background-color: red;
+    width: 75px;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.61);
+    border-radius: 5%;
+}
+.cryptButton:active{
+    box-shadow: 0px 0px 0px black;
+    border: 1px solid rgba(58, 58, 58, 0.616);
+    background-color: rgb(253, 15, 15);
 }
 

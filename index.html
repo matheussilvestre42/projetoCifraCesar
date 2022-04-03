@@ -10,12 +10,28 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
-
-        </nav>
+        <h1>C R I P T O G R A F I A S</h1>
     </header>
     <main>
+        <section class="image"></section>
         <section class="explanText">
+            <h1>Cifra de Cesar</h1>
+            <div class="text">
+                <div class="colums">
+                    <p>A cifra de César é um tipo de criptografia baseado no alfabeto. Essa criptografia porém, não traz segunça devido a sua facilidade de decodificação.</p>
+                    <p>Sua cifragem é feita da seguinte forma, é decidido um código para a codificação do texto, esse código e chamado de chave. A partir dessa chave e usando o alfabeto, codificamos a mensagem letra por letra.</p>
+                </div>
+                <div class="colums">
+                    <p>A cada letra, pulamos uma certa quantidade de posicões no alfabeto, essa quantidade é o número da chave escolhida.</p>
+                    <p>Exemplo:</p>
+                    <p>A letra 'a'. Utilizando a chave 5 , pulamos 5 posições usando o alfabeto. a b c d e f ...</p>
+                    <p>Dessa forma, a letra 'a' se tornará a letra 'e', e assim sucessivamente durante toda a mensagem.</p>
+                </div>
+            </div>
+            <aside class="attencion">
+                <strong>Atenção:</strong>
+                <p>Não utilize acentuação na sua mensagem. Ela afetará na performance da cifra</p>
+            </aside>
 
         </section>
         <section class="crypto">
@@ -23,9 +39,9 @@
                 <textarea class="textCrypto" rows="15" cols="50"></textarea>
                 <textarea class="textDecrypto" cols="50" rows="15"></textarea><br>
                 <input type="number" class="key">
-                <input type="button" value="Codificar" onclick="encrypt()">
-                <input type="button" value="Decodificar" onclick="decrypt()">
-                <input type="reset" value="Limpar">
+                <div class="buttons">
+                   <input type="button" onclick="encrypt()" value="Codificar" class="cryptButton">
+                </div>
             </form>
         </section>
     </main>
