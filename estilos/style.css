@@ -37,6 +37,17 @@ section.image{
     height: 87vh;
     box-shadow: inset 0px 10px 18px 15px black;
 }
+.title{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    padding: 250px;
+    text-shadow: 1px 2px 5px black;
+}
+.title > hr{
+    width: 400px;
+    margin-left: 190px;
+}
 .explanText > h1{
     text-align: center;
     padding-top: 50px;
@@ -44,17 +55,38 @@ section.image{
 .text {
     display: flex;
 }
+.text > hr{
+    width: 5px;
+    height: 313px;
+    background-color: #130502;
+    margin-top: 50px;
+    margin-left: 71px;
+}
 .colums{
     width: 500px;
     text-align: justify;
-    padding: 30px;
+    padding: 50px 10px 40px 0px;
     margin: auto;
+    margin-left: 15px;
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+abbr{
+    text-decoration: none;
+    font-weight: bold;
+}
+abbr:hover{
+    color: rgb(35, 35, 247)
+}
+.strong{
+    color: rgb(245, 43, 43);
 }
 .attencion{
     background-color: rgb(255, 255, 71);
     width: 700px;
     margin: auto;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.562);
+    margin-bottom: 50px;
 }
 .attencion > strong{
     color: rgb(248, 46, 46);
@@ -67,15 +99,21 @@ section.image{
 .crypto{
     padding: 20px;
     margin-left: 10%;
+    margin-bottom: 50px;
 }
 .textCrypto, .textDecrypto{
     font-size: 17px;
 }
-.buttons{
-    display: flex;
-    padding: 5px;
+.key{
+    height: 30px;
 }
-.cryptButton{
+.aside{
+    display: flex;
+}
+.buttons{
+    margin-left: 100px;
+}
+.button{
     background-color: red;
     width: 75px;
     color: white;
@@ -84,10 +122,26 @@ section.image{
     border: 1px solid black;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.61);
     border-radius: 5%;
+    margin-left: 10px;
 }
-.cryptButton:active{
+.button:active{
     box-shadow: 0px 0px 0px black;
     border: 1px solid rgba(58, 58, 58, 0.616);
     background-color: rgb(253, 15, 15);
 }
-
+footer{
+    background-color: var(--cor4);
+    color: white;
+    font-size: 17px;
+}
+footer >p {
+    padding: 15px;
+    text-align: center;
+}
+footer  a{
+    text-decoration: none;
+    color: white;
+}
+footer  a:hover{
+    font-weight: bold;
+}
