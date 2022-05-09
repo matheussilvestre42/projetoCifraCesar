@@ -4,58 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <title>Cifra de César</title>
     <link rel="stylesheet" href="estilos/style.css">
     <script src="js/code.js"></script>
 </head>
 <body>
-    <header>
-        <h1>C R I P T O G R A F I A S</h1>
-    </header>
-    <main>
-        <section class="image">
-            <section class="title">
-                <h1>Cifra de César</h1>
-                <hr>
-            </section>
-        </section>
-        <section class="explanText">
-            <div class="text">
-                <hr>
-                <div class="colums">
-                    <p>Em meados de 50 a.C, o imperador Julio César desenvolveu esse método de criptografia para mandar mensagens para suas tropas.</p>
-                    <p>A cifra de César é um tipo de criptografia baseado no alfabeto. Essa criptografia porém, não traz segurança devido a sua facilidade de decodificação.</p>
-                    <p>Sua cifragem é feita da seguinte forma, é decidido um valor numérico para a codificação do texto, esse valor é chamado de chave. A partir dessa chave, usamos o alfabeto como meio para criar o <abbr title="Texto Criptografado">criptograma.</abbr></p>
-                </div>
-                <hr style="height: 250px;">
-                <div class="colums" style="margin-top: 0px;">
-                    <p>Para cada letra do texto original, pulamos uma certa quantidade(chave) de letras no alfabeto, e substituimos a original pela letra que paramos.</p>
-                    <p>Exemplo:</p>
-                    <p>A letra 'A'. Utilizando a chave 5 , pulamos 5 posições usando o alfabeto. <span class="strong">A</span> B C D <span class="strong">E</span> F ...</p>
-                    <p>Dessa forma, a letra 'A' se tornará a letra 'E', e assim sucessivamente durante toda a mensagem.</p>
-                </div>
-            </div>
-            <aside class="attencion">
-                <strong>Atenção:</strong>
-                <p>Não utilize acentuação, nem caracteres especiais na sua mensagem. Ela afetará na performance da cifra</p>
-            </aside>
+    <!--Desktop Display-->
 
-        </section>
-        <section class="crypto">
-            <form>
-                <textarea class="textCrypto" rows="15" cols="50"></textarea>
-                <textarea class="textDecrypto" cols="50" rows="15"></textarea><br>
-                <div class="aside">
-                    Chave: <input type="number" class="key">
-                    <div class="buttons">
-                       <input type="button" onclick="encrypt()" value="Codificar" class="button">
-                       <input type="button" onclick="decrypt()" value="Decodificar" class="button">
-                       <input type="reset" class="button" value="Limpar">
+    <div class="desktop">
+        <header>
+            <h1>Criptografias</h1>
+        </header>
+        <main>
+            <section class="image">
+                <section class="title">
+                    <h1>Cifra de César</h1>
+                    <hr>
+                </section>
+            </section>
+            <section class="explanText">
+                <h2>A Cifra</h2>
+                <div class="text">
+                    <hr>
+                    <div class="colums">                        
+                        <p>Em meados de 50 a.C, o imperador Julio César desenvolveu esse método de criptografia para mandar mensagens para suas tropas.</p>
+                        <p>A cifra de César é um tipo de criptografia baseado no alfabeto. Essa criptografia porém, não traz segurança devido a sua facilidade de decodificação.</p>
+                        <p>Sua cifragem é feita da seguinte forma, é decidido um valor numérico para a codificação do texto, esse valor é chamado de chave. A partir dessa chave, usamos o alfabeto como meio para criar o <abbr title="Texto Criptografado">criptograma.</abbr></p>
+                    </div>
+                    <hr>
+                    <div class="colums">
+                        <p>Para cada letra do texto original, pulamos uma certa quantidade(chave) de letras no alfabeto, e substituimos a original pela letra que paramos.</p>
+                        <p>Exemplo:</p>
+                        <p>A letra 'A'. Utilizando a chave 5 , pulamos 5 posições usando o alfabeto. <span class="strong">A</span> B C D <span class="strong">E</span> F ...</p>
+                        <p>Dessa forma, a letra 'A' se tornará a letra 'E', e assim sucessivamente durante toda a mensagem.</p>
                     </div>
                 </div>
-            </form>
-        </section>
-    </main>
-    <footer><p>Site desenvolvido por <a href="https://github.com/matheussilvestre42" target="_blank" rel="external">Matheus Silvestre</a></p></footer>
+                <aside class="attencion">
+                    <strong>Atenção:</strong>
+                    <p>Não utilize acentuação, nem caracteres especiais na sua mensagem. Ela afetará na performance da cifra</p>
+                </aside>
+            </section>
+            <section class="crypto">
+                <form>
+                    <textarea class="textCrypto" rows="15" cols="50"></textarea>
+                    <textarea class="textDecrypto" cols="50" rows="15"></textarea><br>
+                    <div class="aside">
+                        Chave: <input type="number" class="key">
+                        <div class="buttons">
+                           <input type="button" onclick="encrypt()" value="Codificar" class="button">
+                           <input type="button" onclick="decrypt()" value="Decodificar" class="button">
+                           <input type="reset" class="button" value="Limpar">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer><p>Site desenvolvido por <a href="https://github.com/matheussilvestre42" target="_blank" rel="external">Matheus Silvestre</a></p></footer>
+    </div>
+
+    <!--Mobile display-->
+
+    <div class="mobile">
+        <header>
+            <h1>Criptografias</h1>
+        </header>
+        <main>
+            <section class="image">
+                <section class="title">
+                    <h1>Cifra de César</h1>
+                    <hr>
+                </section>
+            </section>
+            <section class="explanText">
+                <div class="text">
+                    <hr>
+                    <div class="colums">
+                        <p>Em meados de 50 a.C, o imperador Julio César desenvolveu esse método de criptografia para mandar mensagens para suas tropas.</p>
+                        <p>A cifra de César é um tipo de criptografia baseado no alfabeto. Essa criptografia porém, não traz segurança devido a sua facilidade de decodificação.</p>
+                        <p>Sua cifragem é feita da seguinte forma, é decidido um valor numérico para a codificação do texto, esse valor é chamado de chave. A partir dessa chave, usamos o alfabeto como meio para criar o <abbr title="Texto Criptografado">criptograma.</abbr></p>
+                    </div>
+                    <hr>
+                    <div class="colums">
+                        <p>Para cada letra do texto original, pulamos uma certa quantidade(chave) de letras no alfabeto, e substituimos a original pela letra que paramos.</p>
+                        <p>Exemplo:</p>
+                        <p>A letra 'A'. Utilizando a chave 5 , pulamos 5 posições usando o alfabeto. <span class="strong">A</span> B C D <span class="strong">E</span> F ...</p>
+                        <p>Dessa forma, a letra 'A' se tornará a letra 'E', e assim sucessivamente durante toda a mensagem.</p>
+                    </div>
+                </div>
+                <aside class="attencion">
+                    <strong>Atenção:</strong>
+                    <p>Não utilize acentuação, nem caracteres especiais na sua mensagem. Ela afetará na performance da cifra</p>
+                </aside>
+    
+            </section>
+            <section class="crypto">
+                <form>
+                    <textarea class="textCrypto" rows="15" cols="50"></textarea>
+                    <textarea class="textDecrypto" cols="50" rows="15"></textarea><br>
+                    <div class="aside">
+                        Chave: <input type="number" class="key">
+                        <div class="buttons">
+                           <input type="button" onclick="encrypt()" value="Codificar" class="button">
+                           <input type="button" onclick="decrypt()" value="Decodificar" class="button">
+                           <input type="reset" class="button" value="Limpar">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer><p>Site desenvolvido por <a href="https://github.com/matheussilvestre42" target="_blank" rel="external">Matheus Silvestre</a></p></footer>
+    </div>
 </body>
 </html>

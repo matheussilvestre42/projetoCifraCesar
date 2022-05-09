@@ -1,147 +1,117 @@
 @import "UTF-8";
 @font-face {
-    font-family: 'matrix';
-    src: url(../fonte/matrix.ttf);
-}
-
-*{
-    padding: 0;
-    margin: 0;
-    font-family: var(--normal);
+    font-family: 'tech';
+    src: url(../fonte/Technotot.otf);
 }
 :root{
-    /*Paleta de cores do site*/
-    --cor1: #020202;
-    --cor2: #140B06;
-    --cor3: #130502;
-    --cor4: #080403;
+    /*Variable colors*/
+    --cor: #0C2C70;
+    --cor: #6391F2;
+    --cor: #1A5EF0;
+    --cor: #2E4370;
+    --cor: #154ABD;
 
-    /*Fontes do site*/
+    /*Variable Fonts*/
+    --tech: 'tech', cursive;
     --normal: Arial, Helvetica, sans-serif;
-    --matrix: 'matrix', cursive;
 }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--normal);
+}
+
+
+/*CONFIGURAÇÔES GERAIS*/
+body{
+    background-color: #0C2C70;
+}
+main{
+    background-color: white;
+}
+
+/*Cabeçalho*/
 header{
-    background-image: linear-gradient(to right, #020202, #140B06, #130502, #080403);
-    color: white;
-    text-align: center;
+    background-color: #1A5EF0;
 }
 header > h1{
-    padding: 10px;
-    font-family:var(--matrix);
-}
-section.image{
-    background-image: url('../imagem/pexels-cottonbro-7319070.jpg');
-    background-position: center;
-    background-attachment: fixed;
-    width: 98.7vw;
-    height: 87vh;
-    box-shadow: inset 0px 10px 18px 15px black;
-}
-.title{
-    color: white;
-    font-size: 3em;
-    text-align: center;
-    padding: 250px;
-    text-shadow: 1px 2px 5px black;
-}
-.title > hr{
-    width: 400px;
-    margin-left: 190px;
-}
-.explanText > h1{
-    text-align: center;
-    padding-top: 50px;
-}
-.text {
-    display: flex;
-}
-.text > hr{
-    width: 5px;
-    height: 313px;
-    background-color: #130502;
-    margin-top: 50px;
-    margin-left: 71px;
-}
-.colums{
-    width: 500px;
-    text-align: justify;
-    padding: 50px 10px 40px 0px;
-    margin: auto;
-    margin-left: 15px;
-    font-size: 1.2em;
-    line-height: 1.7em;
-}
-abbr{
-    text-decoration: none;
-    font-weight: bold;
-}
-abbr:hover{
-    color: rgb(35, 35, 247)
-}
-.strong{
-    color: rgb(245, 43, 43);
-}
-.attencion{
-    background-color: rgb(255, 255, 71);
-    width: 700px;
-    margin: auto;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.562);
-    margin-bottom: 50px;
-}
-.attencion > strong{
-    color: rgb(248, 46, 46);
-    padding: 5px;
-}
-.attencion > p{
-    text-align: justify;
-    padding: 10px;
-}
-.crypto{
-    padding: 20px;
-    margin-left: 10%;
-    margin-bottom: 50px;
-}
-.textCrypto, .textDecrypto{
-    font-size: 17px;
-}
-.key{
-    height: 30px;
-}
-.aside{
-    display: flex;
-}
-.buttons{
-    margin-left: 100px;
-}
-.button{
-    background-color: red;
-    width: 75px;
+    font-family: var(--tech);
+    font-size: 1.6em;
     color: white;
     text-align: center;
     padding: 3px;
-    border: 1px solid black;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.61);
-    border-radius: 5%;
-    margin-left: 10px;
 }
-.button:active{
-    box-shadow: 0px 0px 0px black;
-    border: 1px solid rgba(58, 58, 58, 0.616);
-    background-color: rgb(253, 15, 15);
+header>h1::first-letter{
+    font-size: 1.7em;
 }
-footer{
-    background-color: var(--cor4);
+
+/*Imagem de Fundo*/
+.image{
+    background-color: #0C2C70;
+    background-image: url(../imagem/pexels-thisisengineering-3861969.jpg);
+    background-repeat: no-repeat;
+    height: 37em;
+    width: 100%;
+    background-position: center;
+    box-shadow: inset 0px 0px 20px 10px;
+}
+
+/*Titulo Central*/
+.title{
+    padding: 13em 0 5em 0;
+}
+.title > h1{
+    font-size: 3em;
     color: white;
-    font-size: 17px;
-}
-footer >p {
-    padding: 15px;
     text-align: center;
+    text-shadow: 2px 2px 5px black;
+   
+    
 }
-footer  a{
-    text-decoration: none;
-    color: white;
+.title > hr{
+    max-width: 10%;
+    margin: auto;
 }
-footer  a:hover{
-    font-weight: bold;
+
+/*Descrição da cifra*/
+.text{
+    display: flex;
+    padding: 3%;
+}
+.text > hr {
+    width: 7px;
+    background-color: #0C2C70;
+}
+
+/*CONFIGURAÇÕES ESPECIFICAS DESKTOP*/
+
+.desktop{
+    display: block;
+}
+
+/*CONFIGURAÇÕES ESPECIFICAS MOBILE*/
+
+.mobile{
+    display: none;
+    background-color: rebeccapurple;
+}
+@media(max-width: 800px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .mobile .image{
+        background-image: url(../imagem/pexels-thisisengineering-3861969_850.jpg);
+        height: 34em;
+    }
+    .mobile .title > hr{
+        max-width: 25%;
+    }
+}
+@media(max-width: 1400px){
+    .image{
+        background-image: url(../imagem/pexels-thisisengineering-3861969_1350.jpg);
+    }
 }
