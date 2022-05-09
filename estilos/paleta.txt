@@ -1,0 +1,6 @@
+Paleta ProjetoCifraCesar
+#0C2C70
+#6391F2
+#1A5EF0
+#2E4370
+#154ABD
