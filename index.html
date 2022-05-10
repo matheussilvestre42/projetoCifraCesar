@@ -46,14 +46,15 @@
                 </aside>
             </section>
             <section class="crypto">
-                <form>
-                    <textarea class="textCrypto" rows="15" cols="50"></textarea>
-                    <textarea class="textDecrypto" cols="50" rows="15"></textarea><br>
+                <h2>Tente cifrar uma mensagem</h2>
+                <form class="cryptoArea">
+                    <textarea class="textCryptoDesk" rows="15" cols="50"></textarea>
+                    <textarea class="textDecryptoDesk" cols="50" rows="15"></textarea><br>
                     <div class="aside">
-                        Chave: <input type="number" class="key">
+                        Chave: <input type="number" class="keyDesk">
                         <div class="buttons">
-                           <input type="button" onclick="encrypt()" value="Codificar" class="button">
-                           <input type="button" onclick="decrypt()" value="Decodificar" class="button">
+                           <input type="button" onclick="encryptDesk()" value="Codificar" class="button">
+                           <input type="button" onclick="decryptDesk()" value="Decodificar" class="button">
                            <input type="reset" class="button" value="Limpar">
                         </div>
                     </div>
@@ -77,15 +78,13 @@
                 </section>
             </section>
             <section class="explanText">
+                <h2>A Cifra</h2>
                 <div class="text">
                     <hr>
                     <div class="colums">
                         <p>Em meados de 50 a.C, o imperador Julio César desenvolveu esse método de criptografia para mandar mensagens para suas tropas.</p>
                         <p>A cifra de César é um tipo de criptografia baseado no alfabeto. Essa criptografia porém, não traz segurança devido a sua facilidade de decodificação.</p>
                         <p>Sua cifragem é feita da seguinte forma, é decidido um valor numérico para a codificação do texto, esse valor é chamado de chave. A partir dessa chave, usamos o alfabeto como meio para criar o <abbr title="Texto Criptografado">criptograma.</abbr></p>
-                    </div>
-                    <hr>
-                    <div class="colums">
                         <p>Para cada letra do texto original, pulamos uma certa quantidade(chave) de letras no alfabeto, e substituimos a original pela letra que paramos.</p>
                         <p>Exemplo:</p>
                         <p>A letra 'A'. Utilizando a chave 5 , pulamos 5 posições usando o alfabeto. <span class="strong">A</span> B C D <span class="strong">E</span> F ...</p>
@@ -99,14 +98,15 @@
     
             </section>
             <section class="crypto">
-                <form>
-                    <textarea class="textCrypto" rows="15" cols="50"></textarea>
-                    <textarea class="textDecrypto" cols="50" rows="15"></textarea><br>
+                <h2>Tente cifrar uma mensagem</h2>
+                <form class="cryptoArea">
+                    <textarea class="textCryptoMob" rows="10" cols="35"></textarea>
+                    <textarea class="textDecryptoMob" rows="10" cols="35"></textarea><br>
                     <div class="aside">
-                        Chave: <input type="number" class="key">
+                        Chave: <input type="number" class="keyMob">
                         <div class="buttons">
-                           <input type="button" onclick="encrypt()" value="Codificar" class="button">
-                           <input type="button" onclick="decrypt()" value="Decodificar" class="button">
+                           <input type="button" onclick="encryptMob()" value="Codificar" class="button">
+                           <input type="button" onclick="decryptMob()" value="Decodificar" class="button">
                            <input type="reset" class="button" value="Limpar">
                         </div>
                     </div>

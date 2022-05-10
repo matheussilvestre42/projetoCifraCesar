@@ -5,11 +5,11 @@
 }
 :root{
     /*Variable colors*/
-    --cor: #0C2C70;
-    --cor: #6391F2;
-    --cor: #1A5EF0;
-    --cor: #2E4370;
-    --cor: #154ABD;
+    --cor0: #0C2C70;
+    --cor1: #6391F2;
+    --cor2: #1A5EF0;
+    --cor3: #2E4370;
+    --cor4: #154ABD;
 
     /*Variable Fonts*/
     --tech: 'tech', cursive;
@@ -23,12 +23,6 @@
 
 
 /*CONFIGURAÇÔES GERAIS*/
-body{
-    background-color: #0C2C70;
-}
-main{
-    background-color: white;
-}
 
 /*Cabeçalho*/
 header{
@@ -74,13 +68,103 @@ header>h1::first-letter{
 }
 
 /*Descrição da cifra*/
+.explanText h2{
+    font-size: 2em;
+    color: var(--cor3);
+    margin: 2% 0 0.5% 3%;
+} 
 .text{
     display: flex;
     padding: 3%;
 }
 .text > hr {
-    width: 7px;
+    width: 8px;
     background-color: #0C2C70;
+}
+.colums{
+    font-size: 1.4em;
+    line-height: 1.6em;
+    padding: 0 2em 0 1.2em;
+}
+.colums .strong{
+    color: rgb(245, 43, 43);
+}
+abbr{
+    text-decoration: none;
+    font-weight: bold;
+}
+abbr:hover{
+    color: var(--cor1);
+}
+
+/*Caixa Atenção*/
+.attencion{
+    max-width: 36em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    padding: 1.2em 0 0 1.3em;
+    background-color: rgb(255, 255, 71);
+    box-shadow: 2px 2px 5px black;
+    border-radius: 0 2% 2%;
+}
+.attencion strong{
+    color: rgb(248, 46, 46);
+    padding: 0.5em;
+}
+.attencion p{
+    padding: 1.3em;
+}
+
+/*Area da criprografia*/
+.crypto h2{
+    font-size: 2em;
+    color: var(--cor3);
+    margin: 2% 0 0.5% 3%;
+}
+.cryptoArea{
+    text-align: center;
+}
+.key{
+    height: 1.6em;
+}
+
+/*Botoes*/
+.buttons{
+    margin: 0.6em;
+    margin-bottom: 10em;
+}
+.buttons input{
+    margin: 0px 1em;
+    padding: 0.5em;
+    background-color: rgb(248, 46, 46);
+    color: white;
+    border: 1px solid black;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.61);
+    border-radius: 5%;
+}
+.buttons input:active{
+    box-shadow: 0px 0px 0px black;
+    border: 1px solid rgba(58, 58, 58, 0.616);
+}
+
+/*Rodapé*/
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+}
+footer > p{
+    padding: 0.8em;
+}
+footer  a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+footer a:hover{
+    text-decoration: underline;
 }
 
 /*CONFIGURAÇÕES ESPECIFICAS DESKTOP*/
@@ -93,9 +177,8 @@ header>h1::first-letter{
 
 .mobile{
     display: none;
-    background-color: rebeccapurple;
 }
-@media(max-width: 800px) {
+@media(max-width: 600px) {
     .desktop{
         display: none;
     }
@@ -108,6 +191,9 @@ header>h1::first-letter{
     }
     .mobile .title > hr{
         max-width: 25%;
+    }
+    .mobile .attencion{
+        max-width: 25em;
     }
 }
 @media(max-width: 1400px){
