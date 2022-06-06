@@ -35,7 +35,7 @@ const decryptDesk = () => {
             }
         }
     }
-    if(newText.indexOf('undefined') != -1){
+    if(textDecrypt.indexOf('undefined') != -1){
         newText = 'Chave Inválida'
     }
     document.querySelector('.textDecryptoDesk').value = textDecrypt
